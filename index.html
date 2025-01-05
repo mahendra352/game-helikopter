@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helicopter Game</title>
+    <!-- Link ke Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dashboard / Menu Utama -->
+    <div id="dashboard" class="container text-center">
+        <h1>Helicopter Game</h1>
+        <button id="startGameBtn" class="btn btn-primary mt-3">Start Game</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="gameScreen" class="container text-center d-none">
+        <h2>Game Helikopter</h2>
+        <div class="game-container">
+            <div class="score">Score: 0</div>
+            <img src="images-removebg-preview.png" class="helicopter" alt="Helicopter">
+            <div class="obstacle"></div>
+            <div class="obstacle-bottom"></div>
+            <button id="restartBtn" class="btn btn-danger hidden">Restart</button>
+        </div>
+        <button id="backToDashboard" class="btn btn-secondary mt-3">Back to Dashboard</button>
+    </div>
+
+    <!-- Link ke jQuery dan Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
